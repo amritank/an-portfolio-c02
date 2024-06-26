@@ -1,0 +1,304 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2.0rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+
+/* CSS variables */
+:root {
+    --firstHalf: #023047;
+    --secondHalf: #FFB703;
+    --fontcolor: #fff;
+}
+
+
+/* common */
+.splitcolor {
+    height: 8vh;
+    background-image: linear-gradient(to right, var(--firstHalf) 0%, var(--firstHalf) 65%, var(--secondHalf) 65%, var(--secondHalf) 100%), url("../images/avatar_se.jpeg");
+    color: var(--fontcolor);
+}
+
+.rye-regular {
+    font-family: "Rye", serif;
+    font-style: normal;
+    font-size: 1.6rem;
+}
+
+.rye-header {
+    font-family: "Rye", serif;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--secondHalf);
+}
+
+/* header and header element styles */
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+#navbar a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: var(--firstHalf);
+}
+
+#navbar a:hover {
+    font-weight: 800;
+}
+
+
+/* Intro and intro element styles */
+#home {
+    height: 55vh;
+    background-image: url("../images/avatar_se.jpeg"), linear-gradient(to right, var(--firstHalf) 0%, var(--firstHalf) 65%, var(--secondHalf) 65%, var(--secondHalf) 100%);
+    background-size: 15%, cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
+
+}
+
+#home-content h2 {
+    color: var(--secondHalf);
+    font-size: 4.0rem;
+}
+
+#home-content {
+    width: 50%;
+    position: relative;
+    top: 25%;
+    left: 35%;
+
+}
+
+/* main and main element styles */
+main {
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    height: 15vh;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.card-heading {
+    border-right: 5px solid black;
+    color: var(--secondHalf);
+    width: 20%;
+    text-align: center;
+    align-content: center;
+}
+
+.card-content {
+    margin-left: 2%;
+    color: var(--firstHalf);
+    width: 60%
+}
+
+#contact-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#contact-card img {
+    width: 50px;
+    height: 50px;
+}
+
+#contaxt-card p {
+    width: 25%;
+    padding: 20px;
+}
+
+/* footer and footer element styles */
+footer {
+    padding: 20px 10px;
+}
+
+/* Media queries */
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2,
+    body {
+        font-size: 1.8rem;
+    }
+
+    #home-content h2 {
+        font-size: 1.8rem;
+    }
+
+    #navbar a {
+        color: var(--secondHalf);
+    }
+
+    #contact-card img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #page-header {
+        background-image: linear-gradient(to right, var(--firstHalf) 0%, var(--firstHalf) 65%, var(--firstHalf) 65%, var(--firstHalf) 100%);
+        width: 100%;
+    }
+
+    #home {
+        height: 55vh;
+        background-image: url("../images/avatar_se.jpeg"), linear-gradient(to bottom, var(--firstHalf) 0%, var(--firstHalf) 65%, var(--secondHalf) 65%, var(--secondHalf) 100%);
+        background-size: 20%, cover;
+        background-repeat: no-repeat;
+        background-position: 45% 70%;
+    }
+
+
+    .card-heading,
+    .card-content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2,
+    body {
+        font-size: 1.6rem;
+    }
+
+    #home-content h2 {
+        font-size: 1.6rem;
+    }
+
+    #contact-card img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #page-header {
+        background-image: linear-gradient(to right, var(--firstHalf) 0%, var(--firstHalf) 65%, var(--firstHalf) 65%, var(--firstHalf) 100%);
+        width: 100%;
+    }
+
+    #home {
+        height: 55vh;
+        background-image: url("../images/avatar_se.jpeg"), linear-gradient(to bottom, var(--firstHalf) 0%, var(--firstHalf) 65%, var(--secondHalf) 65%, var(--secondHalf) 100%);
+        background-size: 20%, cover;
+        background-repeat: no-repeat;
+        background-position: 45% 70%;
+    }
+
+    #navbar a {
+        color: var(--secondHalf);
+    }
+
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-heading,
+    .card-content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2,
+    body {
+        font-size: 1.4rem;
+    }
+
+    #home-content h2,
+    #home-content p {
+        font-size: 1.4rem;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #contact-card img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #page-header {
+        background-image: linear-gradient(to right, var(--firstHalf) 0%, var(--firstHalf) 65%, var(--firstHalf) 65%, var(--firstHalf) 100%);
+        width: 100%;
+    }
+
+    #home {
+        height: 55vh;
+        background-image: url("../images/avatar_se.jpeg"), linear-gradient(to bottom, var(--firstHalf) 0%, var(--firstHalf) 65%, var(--secondHalf) 65%, var(--secondHalf) 100%);
+        background-size: 20%, cover;
+        background-repeat: no-repeat;
+        background-position: 45% 70%;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-heading {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100vw;
+    }
+
+    /* .card-content {
+        
+    } */
+}
