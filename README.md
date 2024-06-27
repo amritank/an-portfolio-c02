@@ -17,5 +17,7 @@ N/A
 Usage
 In order to view the portfolio page visit: https://amritank.github.io/an-portfolio-c02/
 
+![alt text](assets/images/portfolio_ss.png)
+
 License
 Please refer to the LICENSE in the repo.
