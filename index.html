@@ -15,65 +15,105 @@
 <body>
     <header id="page-header" class="splitcolor">
         <!-- <section> -->
-        <h1 class="rye-header">AN</h1>
+        <h1 class="rye-header">AmritaNair</h1>
         <!-- </section> -->
         <div>
-            <nav id="navbar">
-                <a class="rye-regular" href="#home">Home</a>
-                <a class="rye-regular" href="#about">About</a>
-                <a class="rye-regular" href="#projects">Projects</a>
-                <a class="rye-regular" href="">Resume</a>
-                <a class="rye-regular" href="#contact">Contact</a>
+            <nav id="navbar"> 
+                <a href="#home-content">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects-main-container">Projects</a>
+                <a href="https://docs.google.com/document/d/13dyx4E2Khw3K1hL5Ul5Ve22vrqSmZqU-9WVgFg8GM7M/edit?usp=sharing"
+                    target="_blank">Resume</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
-    <div id="home" class="splitcolor">
-        <section id="home-content">
-            <h2>I'm Amrita Nair</h2>
-            <p> From Testing to Creating: </p>
-            <p>SDET Embracing Web Development</p>
-        </section>
-    </div>
+    <section id="home-content" class="splitcolor">
+        <h2>From Testing to Creating: SDET Embracing Web Development </h2>
+    </section>
     <main>
-        <section id="about" class="card">
-            <div class="card-heading">
+        <div id="about" class="card">
+            <section class="card-heading">
                 <h2>About</h2>
-            </div>
+            </section>
             <div class="card-content">
                 <p>With an extensive background as an SDET, I am now passionately transitioning into the exciting field
                     of web development, ready to bring my expertise and enthusiasm to create innovative web solutions.
                 </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam quo quaerat sint, minima illum
+                    suscipit autem, reiciendis pariatur mollitia tempora tempore ut, provident fugiat saepe distinctio
+                    officiis error molestiae fugit?</p>
             </div>
-        </section>
+        </div>
 
-        <section id="projects" class="card">
-            <div class="card-heading">
+        <div id="projects-main-container" class="card">
+            <section class="card-heading">
                 <h2>Projects</h2>
-            </div>
-            <div class="card-content">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam id harum libero consequuntur
-                    asperiores blanditiis porro voluptate? Adipisci aliquam consectetur modi ratione assumenda. Non
-                    repellat provident atque nostrum vitae voluptatum.</p>
+            </section>
+            <div id="project-image-container" class=" card-content">
 
+                <div id="hero-projects-card">
+                    <a href="https://amritank.github.io/ucb-advanced-css-02/" target="_blank">
+                        <img src="./assets/images/htmlcss.png" alt=" advanced css project image">
+                    </a>
+                    <section class="description">
+                        <h3>CSS Cheatsheet</h3>
+                        <p>Advanced CSS</p>
+                    </section>
+                </div>
+                <div id="other-projects-card">
+                    <div class="project-detail-container">
+                        <a href="https://amritank.github.io/ucb-html-css-website-01/" target="_blank">
+                            <img class="project-thumbnail" src="/assets/images/myWebsite.png" alt="my website thumnail">
+                        </a>
+                        <section class="description2">
+                            <h3>My Website</h3>
+                            <p>HTML/CSS</p>
+                        </section>
+                    </div>
+                    <div class="project-detail-container">
+                        <a href="https://amritank.github.io/html-css-website-c01/" target="_blank">
+                            <img class="project-thumbnail" src="./assets/images/marketing.jpeg" alt="marketing">
+                        </a>
+                        <section class="description2">
+                            <h3>Marketing</h3>
+                            <p>HTML/CSS</p>
+                        </section>
+                    </div>
+                    <div class="project-detail-container">
+                        <a href="https://commingsoon.com" target="_blank">
+                            <img class="project-thumbnail" src="https://dummyimage.com/600x200/d60f0f/"
+                                alt="html css website">
+                        </a>
+                        <section class="description2">
+                            <h3>Comming Soon</h3>
+                            <p>HTML/CSS/JS</p>
+                        </section>
+                    </div>
+                    <div class="project-detail-container">
+                        <a href="https://commingsoon.com" target="_blank">
+                            <img class="project-thumbnail" src="https://dummyimage.com/600x200/8cf28e/"
+                                alt="html css website">
+                        </a>
+                        <section class="description2">
+                            <h3>Comming Soon</h3>
+                            <p>MERN</p>
+                        </section>
+                    </div>
+
+                </div>
             </div>
-        </section>
-        <!-- <section id="contact" class="card">
-            <div class="card-heading">
+
+        </div>
+
+        <div id="contact" class="card">
+            <section class="card-heading">
                 <h2>Contact</h2>
-            </div>
-            <div class="card-content">
-                <div>(617) 291-8774</div>
-                <div>amrita.sasi.nair@gmail.com</div>
-            </div>
-        </section> -->
-        <section id="contact" class="card">
-            <div class="card-heading">
-                <h2>Contact</h2>
-            </div>
+            </section>
             <div id="contact-card" class="card-content">
-                <p>(617) 291-8774</p>
-                <p>amrita.sasi.nair@gmail.com</p>
+                <p>(123) 456-7893</p>
+                <p>abc@gmail.com</p>
                 <p>
                     <a href="https://www.linkedin.com/in/amritank/" target="_blank">
                         <img src="./assets/images/LinkedIn_logo_initials.png" alt="linkedIn logo"></a>
@@ -83,12 +123,11 @@
                         <img src="./assets/images/github_logo.png" alt="Github logo"></a>
 
                 </p>
-
             </div>
-        </section>
+        </div>
     </main>
     <footer class="splitcolor">
-        <p class="rye-regular">&copy Amrita Nair 2024</p>
+        <p class="rye-header">&copy Amrita Nair 2024</p>
     </footer>
 
 </body>
